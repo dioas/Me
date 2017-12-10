@@ -1,0 +1,27 @@
+{
+  "name": "me",
+  "version": "1.0.0",
+  "description": "Portofolio New about me",
+  "main": "index.js",
+  "dependencies": {
+    "gulp-bundle-assets": "^2.29.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-bundle-assets": "^2.29.0",
+    "gulp-concat": "^2.6.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dioas/Me.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dioas/Me/issues"
+  },
+  "homepage": "https://github.com/dioas/Me#readme"
+}

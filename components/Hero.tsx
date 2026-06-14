@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import { asset } from '@/lib/asset';
 import { profile, stats } from '@/lib/data';
 import {
   ArrowIcon,
@@ -49,7 +49,7 @@ export default function Hero() {
                 <ArrowIcon className="h-4 w-4 transition group-hover:translate-x-0.5" />
               </a>
               <a
-                href={profile.cvUrl}
+                href={asset(profile.cvUrl)}
                 className="inline-flex items-center gap-2 rounded-full border border-[var(--color-line)] bg-[var(--color-surface)]/60 px-6 py-3 text-sm font-semibold text-white transition hover:border-white/30"
               >
                 <DownloadIcon className="h-4 w-4" />
@@ -81,12 +81,12 @@ export default function Hero() {
           <div className="reveal is-visible relative mx-auto w-full max-w-sm">
             <div className="pointer-events-none absolute -inset-4 rounded-[2rem] bg-gradient-to-tr from-[var(--color-accent)]/25 via-transparent to-[var(--color-accent-2)]/25 blur-2xl" />
             <div className="relative overflow-hidden rounded-[1.75rem] border border-[var(--color-line)] bg-[var(--color-surface)]">
-              <Image
-                src={profile.photo}
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={asset(profile.photo)}
                 alt={`Portrait of ${profile.name}`}
                 width={628}
                 height={1100}
-                priority
                 className="h-full w-full object-cover"
               />
               <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[var(--color-base)]/70 via-transparent to-transparent" />

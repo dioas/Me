@@ -9,6 +9,11 @@ const nextConfig: NextConfig = {
   output: 'export',
   basePath: basePath || undefined,
   assetPrefix: basePath || undefined,
+  // Exposed to the client so plain <img>/<a> asset URLs can be prefixed too
+  // (next/image + unoptimized does not apply basePath automatically).
+  env: {
+    NEXT_PUBLIC_BASE_PATH: basePath,
+  },
   images: {
     unoptimized: true,
   },

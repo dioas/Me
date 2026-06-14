@@ -1,7 +1,7 @@
 'use client';
 
-import Image from 'next/image';
 import { useEffect, useState } from 'react';
+import { asset } from '@/lib/asset';
 import { navLinks, profile } from '@/lib/data';
 
 export default function Navbar() {
@@ -25,8 +25,9 @@ export default function Navbar() {
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <a href="#top" className="group flex items-center gap-2.5 font-bold tracking-tight">
-          <Image
-            src={profile.photo}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={asset(profile.photo)}
             alt={profile.name}
             width={72}
             height={72}
@@ -49,7 +50,7 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href={profile.cvUrl}
+            href={asset(profile.cvUrl)}
             className="ml-2 rounded-full border border-[var(--color-accent)]/40 bg-[var(--color-accent)]/10 px-4 py-2 text-sm font-semibold text-[var(--color-accent)] transition hover:bg-[var(--color-accent)]/20"
           >
             Resume
@@ -89,7 +90,7 @@ export default function Navbar() {
               </a>
             ))}
             <a
-              href={profile.cvUrl}
+              href={asset(profile.cvUrl)}
               onClick={() => setOpen(false)}
               className="mt-2 rounded-full border border-[var(--color-accent)]/40 bg-[var(--color-accent)]/10 px-4 py-2.5 text-center text-sm font-semibold text-[var(--color-accent)]"
             >

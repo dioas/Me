@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import { asset } from '@/lib/asset';
 import { education, leadership, profile } from '@/lib/data';
 import Reveal from './Reveal';
 import SectionHeading from './SectionHeading';
@@ -13,8 +13,9 @@ export default function About() {
           <div className="mb-6 flex items-center gap-4">
             <div className="relative h-20 w-20 flex-shrink-0">
               <div className="pointer-events-none absolute -inset-1 rounded-full bg-gradient-to-tr from-[var(--color-accent)] to-[var(--color-accent-2)] opacity-70 blur-[6px]" />
-              <Image
-                src={profile.photo}
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={asset(profile.photo)}
                 alt={profile.name}
                 width={160}
                 height={160}

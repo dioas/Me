@@ -32,11 +32,9 @@ jobs:
         run: npm ci
 
       - name: Build static site
-        # Repo is served as a project page (username.github.io/Me),
-        # so the app needs a matching base path. Remove for a user page
-        # or a custom domain.
-        env:
-          PAGES_BASE_PATH: /Me
+        # Served from the root of the custom domain (dioadhita.my.id),
+        # so no base path is needed. Set PAGES_BASE_PATH=/Me again only if
+        # you ever go back to the project page (dioas.github.io/Me).
         run: |
           npm run build
           touch out/.nojekyll

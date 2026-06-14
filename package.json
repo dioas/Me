@@ -1,27 +1,25 @@
 {
-  "name": "me",
+  "name": "dio-adhita-portfolio",
   "version": "1.0.0",
-  "description": "Portofolio New about me",
-  "main": "index.js",
+  "private": true,
+  "description": "Personal portfolio of Dio Adhita Saputra, Senior Frontend Developer",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
   "dependencies": {
-    "gulp-bundle-assets": "^2.29.0"
+    "next": "^15.3.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-bundle-assets": "^2.29.0",
-    "gulp-concat": "^2.6.1"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dioas/Me.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/dioas/Me/issues"
-  },
-  "homepage": "https://github.com/dioas/Me#readme"
+    "@tailwindcss/postcss": "^4.0.0",
+    "@types/node": "^22.10.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5.7.0"
+  }
 }

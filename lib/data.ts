@@ -10,12 +10,12 @@ export const profile = {
   tagline:
     'I build high-performance web applications that serve millions of users.',
   summary:
-    "I'm a frontend developer who has spent the last decade turning complex product ideas into fast, reliable web apps. These days I'm at tiket.com, Indonesia's largest travel platform, where the things I build reach millions of users. I enjoy the less glamorous parts of the craft — shaving milliseconds off load times, building design systems teams actually like using, and shaping architecture so squads can ship without stepping on each other.",
+    "I'm a frontend developer who has spent the last decade turning complex product ideas into fast, reliable web apps. These days I'm at tiket.com, one of Indonesia's largest travel platforms, where the things I build reach millions of users. I enjoy the less glamorous parts of the craft — shaving milliseconds off load times, building design systems teams actually like using, and shaping architecture so squads can ship without stepping on each other.",
 };
 
 export const stats = [
   { value: '10+', label: 'Years Experience' },
-  { value: '90+', label: 'Components Built' },
+  { value: 'Many', label: 'Components Built' },
   { value: '40%', label: 'Performance Gain' },
   { value: '10+', label: 'Apps Delivered' },
 ];
@@ -63,12 +63,12 @@ export const experiences: Experience[] = [
     period: 'Oct 2019 – Present',
     current: true,
     context:
-      "Indonesia's #1 online travel platform serving millions of users for flights, hotels, trains, and events.",
+      "One of Indonesia's leading online travel platforms serving millions of users for flights, hotels, trains, and events.",
     highlights: [
-      'Led design system development with 90+ reusable components used across 10+ applications, reducing development time by 30%.',
+      'Part of the initiator team for the design system, building reusable components adopted across multiple applications to speed up development.',
       'Architected micro-frontend infrastructure with Webpack Module Federation, enabling 5+ teams to deploy independently.',
       'Optimized Core Web Vitals achieving 40% faster page loads via SSR, code splitting, lazy loading, and bundle optimization.',
-      'Built a partner portal serving 500+ event organizers with real-time QR code scanning, handling 10,000+ daily redemptions.',
+      'Built a partner portal for event organizers with real-time QR code scanning, handling thousands of daily ticket redemptions.',
       'Maintained 80%+ test coverage with automated CI/CD pipelines, reducing production bugs by 50%.',
       'Mentored junior developers and established frontend best practices and coding standards across the team.',
     ],
@@ -133,11 +133,11 @@ export const projects: Project[] = [
     linkLabel: 'lrtroute.my.id',
   },
   {
-    title: 'Enterprise Design System',
-    tagline: 'Component library at scale',
+    title: 'Design System',
+    tagline: 'Reusable component library',
     description:
-      'Architected and led a design system of reusable, accessible components adopted across the entire product suite, documented in Storybook with strict typing and visual regression testing.',
-    metrics: ['90+ components', '10+ apps', '-30% dev time'],
+      'Helped initiate a design system of reusable, accessible components adopted across the product suite, documented in Storybook with strict typing and visual regression testing.',
+    metrics: ['Many components', '10+ apps', 'Faster delivery'],
     stack: ['React', 'TypeScript', 'Storybook', 'SCSS'],
   },
   {
@@ -152,8 +152,8 @@ export const projects: Project[] = [
     title: 'Event Partner Portal',
     tagline: 'Real-time ticket redemption',
     description:
-      'Built a partner portal for event organizers with real-time QR code scanning and dashboards, reliably processing tens of thousands of ticket redemptions every day.',
-    metrics: ['500+ organizers', '10,000+ daily scans', 'Real-time'],
+      'Built a partner portal for event organizers with real-time QR code scanning and dashboards, reliably processing thousands of ticket redemptions every day.',
+    metrics: ['Event organizers', 'Daily QR scans', 'Real-time'],
     stack: ['Next.js', 'GraphQL', 'TypeScript'],
   },
   {

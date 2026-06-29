@@ -9,7 +9,7 @@ export default function Work() {
       <SectionHeading
         eyebrow="Featured Work"
         title="Selected impact"
-        description="A few initiatives I led or shaped — measured by the outcomes they drove."
+        description="A few initiatives I helped shape — measured by the outcomes they drove."
       />
 
       <div className="grid gap-6 md:grid-cols-2">
